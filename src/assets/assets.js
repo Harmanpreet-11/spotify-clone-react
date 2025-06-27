@@ -117,66 +117,66 @@ export const albumsData = [
 export const songsData = [
     {
         id:0,
-        name: "Song One",
+        name: "Haseen",
         image: img1,
         file:song1,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Talwinder,  NDS, Rippy Grewal",
         duration:"3:00"
     },
     {
         id:1,
-        name: "Song Two",
+        name: "Aapki Nazron",
         image: img2,
         file:song2,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Sanam",
         duration:"2:20"
     },
     {
         id:2,
-        name: "Song Three",
+        name: "Shaky Shaky",
         image: img3,
         file:song3,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Sanju Rathod, GSPXRK",
         duration:"2:32"
     },
     {
         id:3,
-        name: "Song Four",
+        name: "At Peace",
         image: img4,
-        file:song1,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"2:50"
+        file: song3,
+        desc:"Karan Aujla, Ikky",
+        duration:"2:44"
     },
     {
         id:4,
-        name: "Song Five",
+        name: "Jugraafiya",
         image: img5,
-        file:song2,
-        desc:"Put a smile on your face with these happy tunes",
-        duration:"3:10"
+        file:song1,
+        desc:"Udit Narayan, Shreya Ghosal",
+        duration:"6:10"
     },
     {
         id:5,
-        name: "Song Six",
-        image: img14    ,
-        file:song3,
-        desc:"Put a smile on your face with these happy tunes",
+        name: "Saiyaaran",
+        image: img6    ,
+        file: song1,
+        desc:"Tanishk Bagchi, Faheem Abdullah, Irshad Kamil",
         duration:"2:45"
     },
     {
         id:6,
-        name: "Song Seven",
+        name: "Tera Yaar",
         image: img7,
         file:song1,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Arijit Singh",
         duration:"2:18"
     },
     {
         id:7,
-        name: "Song Eight",
+        name: "Supreme",
         image: img12,
         file:song2,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Shubh",
         duration:"2:35"
     }
 ]

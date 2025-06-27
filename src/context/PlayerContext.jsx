@@ -6,6 +6,7 @@ const PlayerContextProvider = (props) => {
     const audioRef = useRef();
     const seekBg =useRef();
     const seekBar =useRef();
+    const volumeBar = useRef();
 
     const [track, setTrack] = useState(songsData[1]);
     const [playStatus, setPlayStatus] = useState(false);
@@ -56,6 +57,15 @@ const PlayerContextProvider = (props) => {
        audioRef.current.currentTime = ((e.nativeEvent.offsetX / seekBg.current.offsetWidth)* audioRef.current.duration);
     }
 
+    const changeVolume = (e) => {
+    const clickedPosition = e.nativeEvent.offsetX;
+    const totalWidth = volumeBar.current.offsetWidth;
+    const newVolume = clickedPosition / totalWidth;
+    audioRef.current.volume = newVolume;
+
+    volumeBar.current.firstChild.style.width = `${newVolume * 100}%`;
+    }
+
     useEffect(() => {
         setTimeout(() =>{
 
@@ -87,7 +97,9 @@ const PlayerContextProvider = (props) => {
       playWithId,
       previous,
       next,
-      seekSong
+      seekSong,
+      changeVolume,
+      volumeBar,
     }
     return (
         <PlayerContext.Provider value={contextValue}>
