@@ -10,6 +10,7 @@ const PlayerContextProvider = (props) => {
 
     const [track, setTrack] = useState(songsData[1]);
     const [playStatus, setPlayStatus] = useState(false);
+    const [isLoop, setIsLoop] = useState(false);
     const [time,setTime] = useState({
         currentTime:{
             second:0,
@@ -66,6 +67,11 @@ const PlayerContextProvider = (props) => {
     volumeBar.current.firstChild.style.width = `${newVolume * 100}%`;
     }
 
+    const toggleLoop = () => {
+    setIsLoop(!isLoop);
+    audioRef.current.loop = !isLoop;
+    }
+
     useEffect(() => {
         setTimeout(() =>{
 
@@ -100,6 +106,8 @@ const PlayerContextProvider = (props) => {
       seekSong,
       changeVolume,
       volumeBar,
+      isLoop,
+      toggleLoop,
     }
     return (
         <PlayerContext.Provider value={contextValue}>

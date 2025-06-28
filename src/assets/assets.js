@@ -38,9 +38,16 @@ import img13 from './img13.jpg'
 import img14 from './img14.jpg'
 import img15 from './img15.jpg'
 import img16 from './img16.jpg'
+import img18 from './img18.webp'
+import img23 from './img23.webp'
 import song1 from  './song1.mp3'
 import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
+import song4 from './song4.mp3'
+import song5 from './song5.mp3'
+import song6 from './song6.mp3'
+import song7 from "./song7.mp3"
+import song8 from "./song8.mp3"
 
 export const assets = {
     bell_icon,
@@ -143,39 +150,39 @@ export const songsData = [
         id:3,
         name: "At Peace",
         image: img4,
-        file: song3,
+        file: song4,
         desc:"Karan Aujla, Ikky",
         duration:"2:44"
     },
     {
         id:4,
-        name: "Jugraafiya",
-        image: img5,
-        file:song1,
-        desc:"Udit Narayan, Shreya Ghosal",
+        name: "Laal Pari",
+        image: img23,
+        file:song5,
+        desc:"Yo Yo Honey Singh, Simar Kaur",
         duration:"6:10"
     },
     {
         id:5,
         name: "Saiyaaran",
         image: img6    ,
-        file: song1,
+        file: song6,
         desc:"Tanishk Bagchi, Faheem Abdullah, Irshad Kamil",
         duration:"2:45"
     },
     {
         id:6,
-        name: "Tera Yaar",
-        image: img7,
-        file:song1,
-        desc:"Arijit Singh",
+        name: "Jhol",
+        image: img18,
+        file:song7,
+        desc:"Maanu, Annural Khalid",
         duration:"2:18"
     },
     {
         id:7,
         name: "Supreme",
         image: img12,
-        file:song2,
+        file:song8,
         desc:"Shubh",
         duration:"2:35"
     }

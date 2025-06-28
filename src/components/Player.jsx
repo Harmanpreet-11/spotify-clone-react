@@ -4,7 +4,7 @@ import { PlayerContext } from '../context/PlayerContext'
 
 const Play = () => {
 
-  const {time,track,seekBar,seekBg,playStatus,play,pause,previous,next,seekSong,volumeBar, changeVolume} = useContext(PlayerContext);
+  const {time,track,seekBar,seekBg,playStatus,play,pause,previous,next,seekSong,volumeBar, changeVolume,isLoop,toggleLoop} = useContext(PlayerContext);
   return (
     <div className="h-[10%] bg-black flex justify-between items-center text-white px-4">
       <div className="hidden lg:flex items-center gap-4">
@@ -24,7 +24,7 @@ const Play = () => {
            :<img onClick={play} className="w-4 cursor-pointer" src={assets.play_icon} alt="" />
            }
           <img onClick={next}className="w-4 cursor-pointer" src={assets.next_icon} alt="" />
-          <img className="w-4 cursor-pointer" src={assets.loop_icon} alt="" />
+          <img onClick={toggleLoop} className={`w-4 cursor-pointer transition duration-300 ${isLoop ? 'filter brightness-150' : 'opacity-50'}`} src={assets.loop_icon} alt="Loop" title={`Loop ${isLoop ? 'On' : 'Off'}`}/>
          </div>
          <div className="flex items-center gap-5">
           <p>{time.currentTime.minute}:{time.currentTime.second}</p>
