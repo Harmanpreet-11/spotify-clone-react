@@ -4,9 +4,9 @@ import { PlayerContext } from '../context/PlayerContext'
 
 const Play = () => {
 
-  const {time,track,seekBar,seekBg,playStatus,play,pause,previous,next,seekSong,volumeBar, changeVolume,isLoop,toggleLoop} = useContext(PlayerContext);
+  const {time,track,seekBar,seekBg,playStatus,play,pause,previous,next,seekSong, isMiniPlayer,toggleMiniPlayer,volumeBar, changeVolume,isLoop,toggleLoop} = useContext(PlayerContext);
   return (
-    <div className="h-[10%] bg-black flex justify-between items-center text-white px-4">
+    <div className="h-[10%] bg-[#121212] flex justify-between items-center text-white px-4">
       <div className="hidden lg:flex items-center gap-4">
         <img className="w-12" src={track.image} alt="" />
         <div>
@@ -43,11 +43,10 @@ const Play = () => {
         <div ref={volumeBar} onClick={changeVolume} className="w-20 bg-slate-50 h-1 rounded cursor-pointer relative">
          <hr className="absolute top-0 left-0 h-full bg-green-800 border-none w-[50%] rounded" />
         </div>
-        <img className="w-4"src={assets.mini_player_icon} alt="" />
-        <img className="w-4"src={assets.zoom_icon} alt="" />
+      <img onClick={toggleMiniPlayer} className="w-4 cursor-pointer" src={assets.mini_player_icon} alt="MiniPlayer"/>
       </div>
     </div>
-  )
+  );
 }
 
 export default Play

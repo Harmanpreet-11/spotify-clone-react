@@ -71,6 +71,13 @@ const PlayerContextProvider = (props) => {
     setIsLoop(!isLoop);
     audioRef.current.loop = !isLoop;
     }
+    
+
+    const [isMiniPlayer, setIsMiniPlayer] = useState(false);
+    const toggleMiniPlayer = () => {
+    setIsMiniPlayer(!isMiniPlayer);
+    };
+
 
     useEffect(() => {
         setTimeout(() =>{
@@ -108,6 +115,8 @@ const PlayerContextProvider = (props) => {
       volumeBar,
       isLoop,
       toggleLoop,
+      isMiniPlayer,toggleMiniPlayer
+
     }
     return (
         <PlayerContext.Provider value={contextValue}>
