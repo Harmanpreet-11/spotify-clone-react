@@ -41,8 +41,8 @@ A modern and responsive **Spotify Clone** built using **React**, **Vite**, and *
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/spotify-clone.git
-cd spotify-clone
+git clone https://github.com/Harmanpreet-11/spotify-clone-react.git
+cd spotify-clone-react
 
 # Install dependencies
 npm install
